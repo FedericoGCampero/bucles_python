@@ -19,9 +19,13 @@
 inicio = int(input('Ingrese el primer número de la secuencia\n'))
 fin = int(input('Ingrese el último número de la secuencia\n'))
 sumatoria = 0  # Inicializo el contador en 0
-
 # for ... in range(....)
-
 # Imprimir el valor de la sumatoria
+
+lista = list (range(inicio,fin + 1))
+
+for numero in lista:
+    sumatoria += numero
+    print ('numero', numero, 'de', sumatoria)
 
 print("terminamos!")
